@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e4d314;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snakes_and_ladders.WinningController">
+   <children>
+      <ImageView fitHeight="339.0" fitWidth="594.0" layoutX="3.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@result.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="148.0" layoutX="87.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@winner.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="117.0" fitWidth="160.0" layoutX="328.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lose.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="winlabel" layoutX="116.0" layoutY="137.0" prefHeight="58.0" prefWidth="212.0" text="LABEL 1" textAlignment="CENTER">
+         <font>
+            <Font name="Bauhaus 93" size="25.0" />
+         </font></Label>
+      <Label fx:id="loselabel" layoutX="347.0" layoutY="137.0" prefHeight="58.0" prefWidth="226.0" text="LABEL 2">
+         <font>
+            <Font name="Algerian" size="24.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="510.0" style="-fx-background-color: #e84d05;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snakes_and_ladders.HelloController">
+   <children>
+      <ImageView fx:id="board_image" fitHeight="394.0" fitWidth="412.0" layoutX="53.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ludoking.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blue" fitHeight="24.0" fitWidth="16.0" layoutX="14.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@p_blue.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="green" fitHeight="24.0" fitWidth="18.0" layoutX="13.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@p_green.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="name1" layoutX="81.0" layoutY="446.0" prefHeight="37.0" prefWidth="118.0" text="PLAYER 1" textFill="#160dc7">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font></Label>
+      <Label fx:id="name2" alignment="CENTER" layoutX="340.0" layoutY="449.0" prefHeight="30.0" prefWidth="108.0" text="PLAYER2" textFill="#24a60d">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font></Label>
+      <Button fx:id="roll" layoutX="211.0" layoutY="416.0" mnemonicParsing="false" onAction="#die_roll" prefHeight="97.0" prefWidth="118.0">
+         <graphic>
+            <ImageView fx:id="maindice" fitHeight="98.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@dice_main.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Circle fx:id="bluecircle" fill="DODGERBLUE" layoutX="65.0" layoutY="465.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="greencircle" fill="#24a60d" layoutX="448.0" layoutY="465.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fx:id="arrow" fitHeight="58.0" fitWidth="118.0" layoutX="239.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@garrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
